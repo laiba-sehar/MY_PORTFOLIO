@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+.Information{
+  background-color: rgb(121, 86, 121);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.data{
+margin-left: 300px;
+  display: flex;
+  width: 50%;
+  padding: 5px;
+  justify-content: space-between;
+}
+.upperData{
+  /* margin-top: 100px; */
+  margin-left: 300px;
+  display: flex;
+  width: 50%;
+  padding: 5px;
+  justify-content: space-between;
+
+}
+.btn{
+  /* margin-top: 50px; */
+  background-color: rgb(121, 86, 121);
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  
+}
