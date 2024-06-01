@@ -1,7 +1,6 @@
 
 import './App.css';
-import Header from './Header';
-import Home from './components/Home'
+
 import React,{useState,useEffect} from 'react';
 import {
   BrowserRouter as Router,
@@ -9,22 +8,22 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Header from './components/header/Header';
+import Main from './components/main/Main';
+
+
+
+
 function App() {
  
 
   return (
-    <Router>
+   
     <div className='App'>
-  <Header/>
+    <Header/>
+<Main/>
 
-
-  <Routes>
-  <Route path="/" element={<Home/>}/>       
-        </Routes>
- 
- 
     </div>
-    </Router>
   );
 }
 

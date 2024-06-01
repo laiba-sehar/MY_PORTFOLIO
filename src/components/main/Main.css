@@ -1,0 +1,312 @@
+.body-container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  /* padding: 10px; */
+  margin-right: 125px;
+  /* height: 30vh; */
+  /* box-sizing: border-box; */
+}
+
+.image-container {
+  /* flex-shrink: 0; */
+  /* margin-right: 25px; */
+  padding: 10px 20px 15px 20px;
+  margin-top: 50px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* object-fit: cover; */
+}
+
+
+
+.text-container {
+  margin-top: 50px;
+  /* max-width: 500px; */
+}
+
+.text-container p {
+  /* padding: 10px 20px 15px 20px; */
+  margin: 0;
+  font-size: 1.2rem;
+  color: #9ea0a3;
+}
+
+.about-section {
+  margin-left: 140px;
+  margin-top: 0px;
+  max-width: 600px;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #9ea0a3;
+}
+
+.body-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.body-container3 {
+  margin-top: 170px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 125px;
+  height: 30vh;
+  box-sizing: border-box;
+}
+
+.links-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  margin-left: 130px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.link-item p {
+  flex: 0 0 150px;
+  margin: 0;
+  color: white;
+}
+
+.link-item a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: white;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+
+.link-item a:hover {
+  text-decoration: underline;
+}
+
+.link-content {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-image {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.body-container4 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 125px;
+  height: 30vh;
+  box-sizing: border-box;
+}
+.pheading{
+ margin-left: 135px;
+}
+.Lheading{
+  margin-left: 135px;
+}
+
+.projects-wrapper {
+ 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+}
+
+.project-item {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 135px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.project-item p {
+  flex: 0 0 100px;
+  margin: 0;
+  color: white;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.project-image {
+  width: 40px;
+  height: 35px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 16px;
+  margin-top: 7px;
+  color: #9ea0a3;
+  max-width: 400px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .body-container1,
+  .body-container2,
+  .body-container3,
+  .body-container4 {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+    /* padding: 10px; */
+  }
+
+  .text-container,
+  .about-section,
+  .links-wrapper,
+  .projects-wrapper {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .link-item,
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  .link-item p,
+  .project-item p {
+    flex: none;
+    margin-bottom: 5px;
+  }
+
+  .arrow-image {
+    margin-left: 5px;
+  }
+
+  .project-content {
+    margin-left: 0;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .text-container p {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .about-section p {
+    margin-left: 0;
+  }
+  .projects-wrapper{
+    margin-top: 50px;
+  }
+  .links-wrapper {
+    margin-top: 70px;
+  }
+  .pheading{
+    margin-top: 50px;
+  }
+  .Lheading{
+    margin-top: 60px;
+  }
+
+  /* Align headings with the start of the page */
+  .projects-wrapper > p,
+  .links-wrapper > p {
+    margin-left: 0;
+    color: white;
+  }
+
+  /* Ensure profile image and text are in the same row */
+  .body-container1 {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .text-container {
+    /* margin-left: 20px; */
+    margin-top: 40px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .text-container p {
+    font-size: 0.9rem;
+  }
+
+  .project-description {
+    font-size: 12px;
+  }
+
+  .link-item p,
+  .project-item p {
+    font-size: 14px;
+  }
+
+  .arrow-image {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Ensure profile image and text are in the same row */
+  .body-container1 {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .text-container {
+    margin-left: 0px;
+    margin-top: 70px;
+    justify-content: center;
+  }
+
+  /* Align headings with the start of the page */
+  .projects-wrapper > p,
+  .links-wrapper > p {
+    /* margin-left: -100px; */
+    color: white;
+  }
+}

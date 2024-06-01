@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    /* background-color: #282c34; */
+    left: 0;
+  }
+  
+  .logo {
+    height: 40px;  /* Adjust the size as needed */
+  }
+  
