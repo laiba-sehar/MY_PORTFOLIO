@@ -1,12 +1,134 @@
-.header {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 20px 20px;
+  width: 100%;
+  background-color: #030202 !important;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top */
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.logo {
+  height: 40px; /* Adjust the size as needed */
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.nav-links li {
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+.nav-links li::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #4CAF50;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-links li:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-top: 10px;
+    height: 30px; /* Adjust the size as needed */
+  }
+  
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+  width: 100%;
+  background-color: #030202 !important;
+  
+}
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #030202;
+    padding: 20px 10px;
+  }
+
+  .nav-links.open {
     display: flex;
-    align-items: center;
-    padding: 5px;
-    /* background-color: #282c34; */
+  }
+
+  .nav-links li {
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+  }
+  
+  .nav-links li::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #4CAF50;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
     left: 0;
   }
   
-  .logo {
-    height: 40px;  /* Adjust the size as needed */
+  .nav-links li:hover {
+    color: #fff;
+    transform: translateY(-2px);
   }
   
+  .nav-links li:hover::after {
+    width: 100%;
+  }
+  
+
+  .hamburger {
+    display: block;
+  }
+}
