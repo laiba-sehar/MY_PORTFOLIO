@@ -89,7 +89,7 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  margin-right: 150px;
+  margin-right: 190px;
 }
 
 .image-container {
@@ -275,7 +275,9 @@
   color: #9ea0a3;
   max-width: 400px;
 }
-
+.frontend{
+    font-size: 14px!important;
+}
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .body-container1,
@@ -359,6 +361,10 @@
     /* margin
     -left: 140px; */
   }
+  .ptag{
+    font-size: 13px !important;
+  }
+
 
 
   /* Align headings with the start of the page */

@@ -20,7 +20,7 @@ function main() {
         </div>
         <div className="text-container">
           <p style={{ color: "white" }}>Laiba Sehar{""}</p>
-          <p>Frontend Website Developer</p>
+          <p className="frontend">Frontend Website Developer</p>
         </div>
       </div>
       <div className="body-container2">
@@ -47,7 +47,7 @@ function main() {
           <div className="project-item">
             <a
               href="https://hskn-9210b.web.app"
-              target=""
+              target="_blank"
               rel="noopener noreferrer"
             >
             <div class="project-image-container">
@@ -68,7 +68,7 @@ function main() {
           <div className="project-item">
             <a
               href="https://watch-website-85c3a.web.app/"
-              target=""
+               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={watch} alt="Project" className="project-image" />
@@ -87,7 +87,7 @@ function main() {
           <div className="project-item">
             <a
               href="https://recipe-website-5dec7.web.app/"
-              target=""
+              target="_blank"
               rel="noopener noreferrer"
             >
               <img src={recipe} alt="Project" className="project-image" />
